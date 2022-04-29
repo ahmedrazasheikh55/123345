@@ -1,0 +1,40 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container
+{
+    display: grid;
+    /* text-decoration: underline; */
+    border: 2px solid black;
+    text-align: center;
+    font-size: 25px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 80px 80px 150px 40px 100px;
+    grid-template-areas: "class1 class1 class1" 
+    "class2 class2 class2"
+    "class3 class4 class5"
+    "class6 class6 class5"
+    "class6 class6 class5"
+    ". . class5"
+    ". . class5"
+    ". . class5"
+    ". . class5"
+    "class7 class7 class7";
+
+}
+.class1{ background-color: blue;
+grid-area: class1;}
+.class2{background-color: rgb(60, 60, 135);
+    grid-area: class2;}
+.class3{background-color: rgb(12, 98, 169);
+    grid-area: class3;}
+.class4{background-color: rgb(170, 175, 14);
+    grid-area: class4;}
+.class5{background-color: rgb(117, 37, 117);
+    grid-area: class5;}
+.class6{background-color: rgb(182, 60, 193);
+    grid-area: class6;}
+.class7{background-color: rgb(220, 191, 30);
+    grid-area: class7;}
